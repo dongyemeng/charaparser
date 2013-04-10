@@ -1,4 +1,3 @@
-
 semanticMarkup
 semanticMarkup.core
 semanticMarkup.core.description
@@ -9,17 +8,14 @@ semanticMarkup.gui
 semanticMarkup.io.input
 semanticMarkup.io.input.extract
 semanticMarkup.io.input.extract.lib
+semanticMarkup.io.input.lib
 semanticMarkup.io.input.lib.db
-semanticMarkup.io.input.lib.eval
-semanticMarkup.io.input.lib.output
-semanticMarkup.io.input.lib.serial
-semanticMarkup.io.input.lib.type1
-semanticMarkup.io.input.lib.type2
+semanticMarkup.io.input.lib.word
+semanticMarkup.io.input.lib.xml
+semanticMarkup.io.input.lib.xmlOutput
 semanticMarkup.io.output
 semanticMarkup.io.output.lib
-semanticMarkup.io.output.lib.serial
 semanticMarkup.io.output.lib.xml
-semanticMarkup.io.output.lib.xml2
 semanticMarkup.know
 semanticMarkup.know.lib
 semanticMarkup.ling
