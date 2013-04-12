@@ -10,9 +10,12 @@ semanticMarkup.io.input.extract
 semanticMarkup.io.input.extract.lib
 semanticMarkup.io.input.lib
 semanticMarkup.io.input.lib.db
+semanticMarkup.io.input.lib.taxonx
 semanticMarkup.io.input.lib.word
 semanticMarkup.io.input.lib.xml
 semanticMarkup.io.input.lib.xmlOutput
+semanticMarkup.io.input.validate
+semanticMarkup.io.input.validate.lib
 semanticMarkup.io.output
 semanticMarkup.io.output.lib
 semanticMarkup.io.output.lib.xml
