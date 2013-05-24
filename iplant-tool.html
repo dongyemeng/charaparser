@@ -37,7 +37,7 @@ Both come in form of runnable Java .jar files compiled for Java 1.7 packed with 
 </p>
 
 <h3>Dependencies</h3>
-Charaparser Learn and Charaparser Markup have the following software dependencies:
+CharaParser Learn and CharaParser Markup have the following software dependencies:
 <ul>
   <li>Java 1.7</li>
   <li>MySQL</li>
@@ -50,7 +50,7 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
 </ul>
 
 <h3>Command-Line Options</h3>
-<h4>Charaparser Learn</h4>
+<h4>CharaParser Learn</h4>
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td width="250">
@@ -91,7 +91,7 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
     </td>
     <td>
       Database table prefix to use. This has to be an ID that has not been 
- used by another invocation of Charaparser Learn before. The ID has to be recalled 
+ used by another invocation of CharaParser Learn before. The ID has to be recalled 
  for the corresponding invocation of CharaParser Markup.
     </td>
   </tr>
@@ -108,8 +108,7 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
       -style,--style mapping &#60;arg&#62;
     </td>
     <td>
-       Optional style mapping to use for
-                                       Word file input
+       Optional style mapping to use for Microsoft Word file input
     </td>
   </tr>
   <tr>
@@ -123,7 +122,7 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
 </table>
 * marks required parameters      
 
-<h4>Charaparser Markup</h4>
+<h4>CharaParser Markup</h4>
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td width="250">
@@ -163,7 +162,8 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
       -dbtp,--database-table-prefix &#60;arg&#62; *
     </td>
     <td>
-      Database table prefix to use. This has to be the corresponding ID that has been used for the invocation of CharaParser Learn 
+      Database table prefix to use. This has to be the corresponding ID 
+      that has been used for the invocation of CharaParser Learn 
       with the same input dataset. 
     </td>
   </tr>
@@ -189,8 +189,8 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
       -p,--multi-threading &#60;arg&#62;
     </td>
     <td>
-           Use multi-threading to compute the result. Give &#60;arg&#62; in the form 
- of &#60;number of threads per sentence chunking, number of threads per description extractor&#62;
+           Use multi-threading to compute the result. &#60;arg&#62; is to be given in the form 
+ of &#60;max. number of concurrent sentence chunkers, max. number of concurrent description extractors&#62;
     </td>
   </tr>
       <tr>
