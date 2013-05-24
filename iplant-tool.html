@@ -33,11 +33,24 @@
       <section id="main_content" class="inner">
         <h3>CharaParser for iPlant</h3>
 <p>CharaParser for iPlant consists of two tools, CharaParser Learn and Charaparser Markup. 
-Both come in form of runnable Java .jar files compiled for Java 1.7 packed with some additional files.
+<br>
+CharaParser Learn takes morphological descriptions of the biodiversity domain as input and extracts identified
+structure, character and other terms of possible interest. The identified terms are sent to the 
+<a href="http://biosemantics.arizona.edu/ONTNEW/">Ontology Organizer (OTO)</a> 
+for user review and further specification. The output of CharaParser Learn is a text file containing a direct link
+to OTO, where the respective terms can be reviewed.
+<br>
+Charaparser Markup takes morphological descriptions of the biodiversity domain as input. Using an established
+domain glossary, in combination with the user reviewed terms extracted by Charaparser Learn, the morphological 
+descriptions are semantically marked up. The output for Charaparser Markup are XML files containing the semantically
+markedup descriptions.
 </p>
 
-<h3>Dependencies</h3>
-CharaParser Learn and CharaParser Markup have the following software dependencies:
+<h3>Installation and Dependencies</h3>
+CharaParser Learn and Markup come in form of runnable Java .jar files compiled for Java 1.7,
+packed with additional files.
+
+They depend on the following software:
 <ul>
   <li>Java 1.7</li>
   <li>MySQL</li>
