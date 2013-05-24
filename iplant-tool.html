@@ -49,20 +49,32 @@ Charaparser Learn and Charaparser Markup have the following software dependencie
 </ul>
 
 <h3>Command-Line Options</h3>
-Charaparser Learn
- -c,--config <arg>                     Configuration to use. Will depend on the type of dataset to process. 
+Charaparser Learn:<br>
+<table>
+  <tr>
+    <td>
+      -c,--config  &#60;arg&#62;
+    </td>
+    <td>
+      Configuration to use. Will depend on the type of dataset to process. 
  Possible configurations: Plant, Hymenoptera, Algea, Porifera, Treatise.
- -dbh,--database-host <arg>            MySQL host
- -dbu,--database-user <arg>            Database user to use
- -dbp,--database-password <arg>        Database password to use
- -dbn,--database-name <arg>            Name of database to use
- -dbtp,--database-table-prefix <arg>   Database table prefix to use. This has to be a string that has not been 
+    </td>
+  </tr>
+  
+  
+</table>
+                      
+ -dbh,--database-host &#60;arg&#62;            MySQL host
+ -dbu,--database-user &#60;arg&#62;            Database user to use
+ -dbp,--database-password &#60;arg&#62;        Database password to use
+ -dbn,--database-name &#60;arg&#62;            Name of database to use
+ -dbtp,--database-table-prefix &#60;arg&#62;   Database table prefix to use. This has to be a string that has not been 
  used by another invocation before.
- -i,--input <arg>                      Input file or directory
- -style,--style mapping <arg>          Optional style mapping to use for
+ -i,--input &#60;arg&#62;                      Input file or directory
+ -style,--style mapping &#60;arg&#62;          Optional style mapping to use for
                                        Word file input
- -p,--multi-threading &#60;arg&#60;    Use multi-threading to compute the result. Give &#60;arg&#60; in the form 
- of &#60;number of threads per sentence chunking, number of threads per description extractor&#60;
+ -p,--multi-threading &#60;arg&#62;    Use multi-threading to compute the result. Give &#60;arg&#62; in the form 
+ of &#60;number of threads per sentence chunking, number of threads per description extractor&#62;
  -h,--help                             Shows the help
 
 
