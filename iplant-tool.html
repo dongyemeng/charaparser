@@ -89,8 +89,9 @@ Charaparser Learn:<br>
       -dbtp,--database-table-prefix &#60;arg&#62;
     </td>
     <td>
-      Database table prefix to use. This has to be a string that has not been 
- used by another invocation before.
+      Database table prefix to use. This has to be an ID that has not been 
+ used by another invocation of Charaparser Learn before. The ID has to be recalled 
+ for the corresponding invocation of CharaParser Markup.
     </td>
   </tr>
       <tr>
@@ -130,7 +131,85 @@ Charaparser Learn:<br>
 </table>
                 
 
-Charaparser Markup
+Charaparser Markup:<br>
+<table border="0">
+  <tr>
+    <td width="250">
+      -c,--config  &#60;arg&#62;
+    </td>
+    <td>
+      Configuration to use. Will depend on the type of dataset to process. 
+ Possible configurations: Plant, Hymenoptera, Algea, Porifera, Treatise.
+    </td>
+  </tr>
+    <tr>
+    <td>
+      -dbh,--database-host &#60;arg&#62;
+    </td>
+    <td>
+      MySQL host
+    </td>
+  </tr>
+    <tr>
+    <td>
+      -dbu,--database-user &#60;arg&#62;  &#60;arg&#62;
+    </td>
+    <td>
+      Database user to use
+    </td>
+  </tr>
+    <tr>
+    <td>
+     -dbp,--database-password &#60;arg&#62;
+    </td>
+    <td>
+     Database password to use
+    </td>
+  </tr>
+    <tr>
+    <td>
+      -dbtp,--database-table-prefix &#60;arg&#62;
+    </td>
+    <td>
+      Database table prefix to use. This has to be the corresponding ID that has been used for the invocation of CharaParser Learn 
+      with the same input dataset. 
+    </td>
+  </tr>
+      <tr>
+    <td>
+      -i,--input &#60;arg&#62;
+    </td>
+    <td>
+       Input file or directory
+    </td>
+  </tr>
+      <tr>
+    <td>
+      -style,--style mapping &#60;arg&#62;
+    </td>
+    <td>
+       Optional style mapping to use for
+                                       Word file input
+    </td>
+  </tr>
+      <tr>
+    <td>
+      -p,--multi-threading &#60;arg&#62;
+    </td>
+    <td>
+           Use multi-threading to compute the result. Give &#60;arg&#62; in the form 
+ of &#60;number of threads per sentence chunking, number of threads per description extractor&#62;
+    </td>
+  </tr>
+      <tr>
+    <td>
+       -h,--help                            
+    </td>
+    <td>
+        Shows the help
+    </td>
+  </tr>  
+</table>
 
       </section>
     </div>
