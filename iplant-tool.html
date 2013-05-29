@@ -63,11 +63,11 @@ They depend on the following software:
 </ul>
 
 <h3>Command-Line Options</h3>
-<h4>CharaParser Learn</h4>
+<h4>Charaparser Learn Wrapper Script</h4>
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td width="250">
-      -c,--config  &#60;arg&#62; *
+      -c &#60;arg&#62; *
     </td>
     <td>
       Configuration to use. Will depend on the type of dataset to process. 
@@ -76,7 +76,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbh,--database-host &#60;arg&#62; *
+      -n &#60;arg&#62; *
     </td>
     <td>
       MySQL host
@@ -84,7 +84,7 @@ They depend on the following software:
   </tr>
   <tr>
     <td>
-      -dbp,--database-port &#60;arg&#62; *
+      -p &#60;arg&#62; *
     </td>
     <td>
       MySQL port
@@ -92,7 +92,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbn,--database-name &#60;arg&#62; *
+      -d &#60;arg&#62; *
     </td>
     <td>
       Database name to use
@@ -100,7 +100,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbu,--database-user &#60;arg&#62;  &#60;arg&#62; *
+      -u &#60;arg&#62; *
     </td>
     <td>
       Database user to use
@@ -108,7 +108,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-     -dbpw,--database-password &#60;arg&#62; *
+     -s &#60;arg&#62; *
     </td>
     <td>
      Database password to use
@@ -116,7 +116,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbtp,--database-table-prefix &#60;arg&#62; *
+      -z &#60;arg&#62; *
     </td>
     <td>
       Database table prefix to use. This has to be an ID that has not been 
@@ -134,7 +134,7 @@ They depend on the following software:
   </tr>
       <tr>
     <td>
-      -style,--style mapping &#60;arg&#62;
+      -w &#60;arg&#62;
     </td>
     <td>
        Optional style mapping to use for Microsoft Word file input
@@ -149,13 +149,14 @@ They depend on the following software:
     </td>
   </tr>  
 </table>
-* marks required parameters      
+* marks required parameters   
 
-<h4>CharaParser Markup</h4>
+
+<h4>Charaparser Markup Wrapper Script</h4>
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td width="250">
-      -c,--config  &#60;arg&#62; *
+      -c &#60;arg&#62; *
     </td>
     <td>
       Configuration to use. Will depend on the type of dataset to process. 
@@ -164,23 +165,23 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbh,--database-host &#60;arg&#62; *
+      -n &#60;arg&#62; *
     </td>
     <td>
       MySQL host
     </td>
   </tr>
-      <tr>
+  <tr>
     <td>
-      -dbp,--database-port &#60;arg&#62; *
+      -p &#60;arg&#62; *
     </td>
     <td>
       MySQL port
     </td>
   </tr>
-      <tr>
+    <tr>
     <td>
-      -dbn,--database-name &#60;arg&#62; *
+      -d &#60;arg&#62; *
     </td>
     <td>
       Database name to use
@@ -188,7 +189,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbu,--database-user &#60;arg&#62;  &#60;arg&#62; *
+      -u &#60;arg&#62; *
     </td>
     <td>
       Database user to use
@@ -196,7 +197,7 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-     -dbpw,--database-password &#60;arg&#62; *
+     -s &#60;arg&#62; *
     </td>
     <td>
      Database password to use
@@ -204,12 +205,12 @@ They depend on the following software:
   </tr>
     <tr>
     <td>
-      -dbtp,--database-table-prefix &#60;arg&#62; *
+      -z &#60;arg&#62; *
     </td>
     <td>
-      Database table prefix to use. This has to be the corresponding ID 
-      that has been used for the invocation of CharaParser Learn 
-      with the same input dataset. 
+      Database table prefix to use. This has to be an ID that has not been 
+ used by another invocation of CharaParser Learn before. The ID has to be recalled 
+ for the corresponding invocation of CharaParser Markup.
     </td>
   </tr>
       <tr>
@@ -222,23 +223,22 @@ They depend on the following software:
   </tr>
       <tr>
     <td>
-      -style,--style mapping &#60;arg&#62;
+      -w &#60;arg&#62;
     </td>
     <td>
-       Optional style mapping to use for
-                                       Word file input
+       Optional style mapping to use for Microsoft Word file input
     </td>
   </tr>
-      <tr>
+  <tr>
     <td>
-      -p,--multi-threading &#60;arg&#62;
+      -t &#60;arg&#62;
     </td>
     <td>
            Use multi-threading to compute the result. &#60;arg&#62; is to be given in the form 
  of &#60;max. number of concurrent sentence chunkers, max. number of concurrent description extractors&#62;
     </td>
   </tr>
-      <tr>
+  <tr>
     <td>
        -h,--help                            
     </td>
@@ -247,7 +247,8 @@ They depend on the following software:
     </td>
   </tr>  
 </table>
-* marks required parameters
+* marks required parameters  
+
 
       </section>
     </div>
