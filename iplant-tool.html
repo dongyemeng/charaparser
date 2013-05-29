@@ -36,11 +36,11 @@
 <br>
 CharaParser Learn takes morphological descriptions of the biodiversity domain as input and extracts identified
 structure, character and other terms of possible interest. The identified terms are sent to the 
-<a href="http://biosemantics.arizona.edu/ONTNEW/">Ontology Organizer (OTO)</a> 
+<a href="http://biosemantics.arizona.edu/ONTNEW/">OTO Lite</a> 
 for user review and further specification. The output of CharaParser Learn is a text file containing a direct link
-to OTO, where the respective terms can be reviewed.
+to OTO Lite, where the respective terms can be reviewed.
 <br>
-CharaParser Markup takes morphological descriptions of the biodiversity domain as input. Using an established
+CharaParser Markup takes the same morphological descriptions of the biodiversity domain as input. Using an established
 domain glossary, in combination with the user reviewed terms extracted by CharaParser Learn, the morphological 
 descriptions are semantically marked up. The output for CharaParser Markup are XML files containing the semantically
 markedup descriptions.
@@ -55,7 +55,7 @@ All delievered files are to be placed in the same directory and structure as the
 CharaParser depends on the following software:
 <ul>
   <li>Java 1.7</li>
-  <li>MySQL</li>
+  <li>MySQL 5.5</li>
   <li>Perl (tested with Perl 5.16) and the modules
     <ul>
       <li>DBI</li>
@@ -216,9 +216,9 @@ CharaParser developers after execution.
       -z &#60;arg&#62; *
     </td>
     <td>
-      Database table prefix to use. This has to be an ID that has not been 
- used by another invocation of CharaParser Learn before. The ID has to be recalled 
- for the corresponding invocation of CharaParser Markup.
+  	Database table prefix to use. This has to be the corresponding ID 
+		that has been used for the invocation of CharaParser Learn 
+		with the same input dataset. 
     </td>
   </tr>
       <tr>
@@ -243,7 +243,7 @@ CharaParser developers after execution.
     </td>
     <td>
            Use multi-threading to compute the result. &#60;arg&#62; is to be given in the form 
- of &#60;max. number of concurrent sentence chunkers, max. number of concurrent description extractors&#62;
+ of &#60;max. number of concurrent sentence chunkers, max. number of concurrent description extractors&#62; e.g. -t 10, 2
     </td>
   </tr>
   <tr>
@@ -260,10 +260,11 @@ CharaParser developers after execution.
 
 <h3>Charaparser Learn Output</h3>
 <ul>
-  <li>workspace/TermReview.txt File with direct link to OTO to review newly discovered terms #</li>
-  <li>workspace/out/config.txt The configuration used</li>
-  <li>workspace/charaparser.log The log file ##</li>
+  <li>workspace/{-z argument}/TermReview.txt File with direct link to OTO Lite to review newly discovered terms #</li>
+  <li>workspace/{-z argument}/out/config.txt The configuration used #</li>
   <li>workspace/{-z argument}/temp/* Temporary files</li>
+  <li>workspace/user.log The user log file #</li>
+  <li>workspace/charaparser.log The admin log file ##</li>
 </ul>
 # File is to be moved to the user's DataStore in iPlant Discover Environment
 <br>
@@ -271,10 +272,11 @@ CharaParser developers after execution.
 
 <h3>Charaparser Markup Output</h3>
 <ul>
-  <li>workspace/out/*.xml The marked up result #</li>
-  <li>workspace/out/config.txt The configuration used</li>
-  <li>workspace/charaparser.log The log file ##</li>
+  <li>workspace/{-z argument}/out/*.xml The marked up result #</li>
+  <li>workspace/{-z argument}/out/config.txt The configuration used #</li>
   <li>workspace/{-z argument}/temp/* Temporary files</li>
+  <li>workspace/user.log The user log file #</li>
+  <li>workspace/charaparser.log The admin log file ##</li>
 </ul>
 # Files are to be moved to the user's DataStore in iPlant Discover Environment
 <br>
