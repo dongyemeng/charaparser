@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="CharaParser : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>CharaParser</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/biosemantics/charaparser">View on GitHub</a>
+
+          <h1 id="project_title">CharaParser</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/biosemantics/charaparser/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/biosemantics/charaparser/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>CharaParser for iPlant</h3>
+<p>CharaParser for iPlant consists of two tools, CharaParser Learn and CharaParser Markup. 
+<br>
+CharaParser Learn takes morphological descriptions of the biodiversity domain as input and extracts identified
+structure, character and other terms of possible interest. The identified terms are sent to the 
+<a href="http://biosemantics.arizona.edu/ONTNEW/">OTO Lite</a> 
+for user review and further specification. The output of CharaParser Learn is a text file containing a direct link
+to OTO Lite, where the respective terms can be reviewed.
+<br>
+CharaParser Markup takes the same morphological descriptions of the biodiversity domain as input. Using an established
+domain glossary, in combination with the user reviewed terms extracted by CharaParser Learn, the morphological 
+descriptions are semantically marked up. The output for CharaParser Markup are XML files containing the semantically
+markedup descriptions.
+</p>
+
+<h3>CharaParser Learn Input</h3>
+<ul>
+  <li>ID
+  <li>Configuration
+  <li>XML Input files according to the defined
+<a href="https://github.com/biosemantics/charaparser/blob/master/resources/io/iplantOutput.xsd">schema</a>
+</ul>
+
+<h3>CharaParser Markup Input</h3>
+<ul>
+  <li>ID
+  <li>Configuration
+  <li>XML Input files according to the defined
+<a href="https://github.com/biosemantics/charaparser/blob/master/resources/io/iplantOutput.xsd">schema</a>
+</ul>
+
+
+<h3>CharaParser Learn Output</h3>
+TermReview.txt
+File containing direct link to OTO Lite to review newly discovered terms #
+config.txt The configuration used #
+error.log*
+
+<h3>CharaParser Markup Output</h3>
+*.xml 
+The marked up result files. These will be according to the defined 
+<a href="https://github.com/biosemantics/charaparser/blob/master/resources/io/iplantOutput.xsd">schema</a>. #
+config.txt The configuration used #
+error.log*
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">CharaParser maintained by <a href="https://github.com/biosemantics">biosemantics</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
